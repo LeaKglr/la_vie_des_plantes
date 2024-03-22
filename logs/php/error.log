@@ -1,0 +1,57 @@
+[08-Mar-2024 14:39:21 UTC] PHP Warning:  rename(C:\Windows\TEMP/woocommerce.8.6.1-p3aua9.tmp,C:\Windows\TEMP/woocommerce.8.6.1.zip): Accès refusé (code: 5) in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\file.php on line 1234
+[08-Mar-2024 14:39:21 UTC] PHP Warning:  unlink(C:\Windows\TEMP/woocommerce.8.6.1.zip): Resource temporarily unavailable in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\file.php on line 1239
+[08-Mar-2024 14:39:31 UTC] PHP Warning:  copy(C:/Users/leaku/Local Sites/laviedesplantes/app/public/wp-content/upgrade/woocommerce.8.6.1/woocommerce/src/StoreApi/Utilities/CheckoutTrait.php): Failed to open stream: No such file or directory in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 309
+[08-Mar-2024 14:39:31 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[08-Mar-2024 14:39:31 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[08-Mar-2024 14:39:31 UTC] PHP Warning:  copy(C:/Users/leaku/Local Sites/laviedesplantes/app/public/wp-content/upgrade/woocommerce.8.6.1/woocommerce/src/StoreApi/Utilities/CheckoutTrait.php): Failed to open stream: No such file or directory in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 309
+[08-Mar-2024 14:39:31 UTC] PHP Warning:  chmod(): No such file or directory in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 173
+[09-Mar-2024 10:46:23 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[09-Mar-2024 11:35:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_id() on null in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php:319
+Stack trace:
+#0 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1193): WooLentorBlocks\Api\Api->get_last_product_data(Object(WP_REST_Request))
+#1 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/woolentor/v1/s...', Array, NULL)
+#2 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api.php(424): WP_REST_Server->serve_request('/woolentor/v1/s...')
+#4 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\leaku\Local Sites\laviedesplantes\app\public\index.php(17): require('C:\\Users\\leaku\\...')
+#12 {main}
+  thrown in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php on line 319
+[09-Mar-2024 11:35:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_id() on null in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php:319
+Stack trace:
+#0 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1193): WooLentorBlocks\Api\Api->get_last_product_data(Object(WP_REST_Request))
+#1 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/woolentor/v1/s...', Array, NULL)
+#2 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api.php(424): WP_REST_Server->serve_request('/woolentor/v1/s...')
+#4 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\leaku\Local Sites\laviedesplantes\app\public\index.php(17): require('C:\\Users\\leaku\\...')
+#12 {main}
+  thrown in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php on line 319
+[09-Mar-2024 12:25:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_id() on null in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php:319
+Stack trace:
+#0 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1193): WooLentorBlocks\Api\Api->get_last_product_data(Object(WP_REST_Request))
+#1 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/woolentor/v1/s...', Array, NULL)
+#2 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api\class-wp-rest-server.php(431): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\rest-api.php(424): WP_REST_Server->serve_request('/woolentor/v1/s...')
+#4 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#9 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-includes\functions.php(1336): WP->main('')
+#10 C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-blog-header.php(16): wp()
+#11 C:\Users\leaku\Local Sites\laviedesplantes\app\public\index.php(17): require('C:\\Users\\leaku\\...')
+#12 {main}
+  thrown in C:\Users\leaku\Local Sites\laviedesplantes\app\public\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Api\Api.php on line 319
+[09-Mar-2024 12:42:29 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
